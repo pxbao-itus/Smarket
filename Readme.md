@@ -20,11 +20,11 @@
 ## API using .NET Core Framwork
 1. Configuration
 - .NET Core Framework 2.1
-- Entity Framework Core 2.1.14 (Nuget Microsoft.EntiryFrameworkCore)
-- Entity Framwork Core with SQL Server 2.1.14 (Nuget Microsoft.EntityFrameworkCore.SqlServer)
+- Entity Framework Core 2.1.14 (Nuget Microsoft.EntityFrameworkCore)
+- Entity Framework Core with SQL Server 2.1.14 (Nuget Microsoft.EntityFrameworkCore.SqlServer)
 - Entity Framework Core Tool 2.1.14 (Nuget Microsoft.EntityFrameworkCore.Tools)
 - DotNetEnv Package
-- Visual Studio 2017
+- Visual Studio 2017 || VS Code
 2. Launch
 - Using file .env:
     `dotnet add package DotNetEnv`
@@ -39,11 +39,13 @@
     string PasswordHashed = BCrypt.Net.BCrypt.HashPassword("Pa$$w0rd", SaltRounds);
     bool verified = BCrypt.Net.BCrypt.Verify("Pa$$w0rd", PasswordHashed);
     ```
+
 ## API using Java Spring Boot
 1. Configuration
 - JAVA 17
 - Java Spring Boot 4
-- Eclipse 2021/9
+- Eclipse 2021/9 || VS Code using Maven
+- Hibernate
 
 2. Launch
 - Open eclipse set /API_JAVASpringBoot is workspace
@@ -57,5 +59,6 @@
 
 2. Launch
 - Create database Smarket
-- Excute file CreateTable.sql & ForeignKey.sql
+- Execute file CreateTable.sql & ForeignKey.sql
 - Editing file .env in folder DOTNET is suitable for each one include username, password
+- Editing file application.properties is suitable for connecting MS SQL Server
